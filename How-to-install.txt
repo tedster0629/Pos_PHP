@@ -1,0 +1,30 @@
+Import the database dump
+========================
+1 - For a new fresh installation use the file "database/new-install/modernpos.sql"
+2 - For an update to the version 3.3 use the file "database/update/update-3.3.sql"
+
+
+Edit file: config.php
+=====================
+1 - Change database credentials, where:
+1.1 - Host is the database server name or ip
+1.2 - db is the database name, example "modernpos"
+1.3 - user is the database username, example "root"
+1.4 - pass is the database password, example "123456"
+1.5 - port is the database server port, by default it is 3306
+
+2 - Change the constant FILEMANAGERURL
+define('FILEMANAGERURL', 'http://full-install-url-of-modernpos/storage/products');
+
+3 - If your URL schema is http://domain/subdirectory/, then change the constant SUBDIRECTORY. Otherwise skip this third step.
+define('SUBDIRECTORY', '');
+For example, my installation is http://www.mydomain.com/modernpos
+I need to change the above constant into:
+define('SUBDIRECTORY', 'modernpos');
+
+Default accounts
+================
+Role 	    Username 	         Password
+Admin 	    admin@dev.com 	     12345678
+Cashier 	cashier@dev.com 	 12345678
+Salesman 	salesman@dev.com 	 12345678

@@ -1,0 +1,47 @@
+/*.main-sidebar ul.sidebar-menu li .svg-icon {
+	margin-left: 10px;
+}
+.sidebar-menu li > a > .pull-right {
+	right: auto;
+}
+.main-sidebar, .left-side {
+	left: auto;
+}
+.content-wrapper, .right-side, .main-footer {
+	margin-right: 180px;
+	margin-left: auto;
+}*/
+
+.sidebar-menu li > a >.pull-right 
+{
+	right: auto;
+	left: 10px !important;
+}
+
+.content-header>.breadcrumb {
+	right: auto;
+	left: 10px !important;
+	float: left !important;
+}
+
+/* POS */
+#vertial-toolbar {
+	right: 0;
+}
+.right-panel #item-list {
+    margin-left: 0;
+    margin-right: 35px;
+}
+#people-area .add-icon .svg-icon {
+	margin: 12px 15px 0 10px;
+}
+/*#people-area .edit-icon {
+	right: auto;
+	left: 50px;
+}*/
+#people-area > input {
+	text-align: left;
+}
+.checkout-payment-option {
+	padding-left: 18px;
+}
